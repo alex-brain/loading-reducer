@@ -1,4 +1,8 @@
-const loadingReducer = (state = {}, action) => {
+const initState = {
+  loading: []
+}
+
+const loadingReducer = (state = initState, action) => {
   const { type } = action;
   const matches = /(.*)_(REQUEST|SUCCESS|FAILURE)/.exec(type);
 
@@ -8,7 +12,7 @@ const loadingReducer = (state = {}, action) => {
     ...state,
     loading: [
       ...state.loading,
-      action.type
+      'test'
     ]
   };
 };
