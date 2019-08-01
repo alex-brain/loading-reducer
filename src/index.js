@@ -1,6 +1,6 @@
 const initState = {}
 
-export default (state = initState, action) => {
+export const loading = (state = initState, action) => {
   const { type } = action;
 
   const matches = /[\w\/@\-\_]+(REQUEST|RECEIVE|ERROR)/gi.exec(type);
