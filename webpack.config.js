@@ -1,12 +1,9 @@
-const webpack = require("webpack");
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
-  // ...
-  optimization: {
-    minimize: true,
-    minimizer: [new UglifyJsPlugin({
-      include: /\.min\.js$/,
-    })]
-  }
+  entry: './src/index.js',
+  watch: true,
+  output: {
+    filename: 'bundle.js'
+  },
 };
