@@ -1,7 +1,7 @@
 {
   "name": "loading-reducer",
-  "version": "1.2.0",
-  "main": "src/index.js",
+  "version": "1.2.1",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
