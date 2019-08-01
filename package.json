@@ -1,9 +1,10 @@
 {
   "name": "loading-reducer",
-  "version": "1.1.0",
-  "main": "index.js",
+  "version": "1.2.0",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,10 @@
     "url": "https://github.com/alex-brain/loading-reducer/issues"
   },
   "homepage": "https://github.com/alex-brain/loading-reducer#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
 }
