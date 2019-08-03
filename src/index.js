@@ -4,7 +4,7 @@ export default (state = {}, action) => {
   const matches = /[\w\/@\-\_]+(REQUEST|RECEIVE|ERROR)/gi.exec(type);
 
   if (!matches) {
-    return { ...state };
+    return Object.assign({}, state);
   }
 
   let key;
@@ -36,10 +36,9 @@ export default (state = {}, action) => {
         entity.errors = []
       }
     }
-    return {
-      ...state,
-      [actionEntity]: entity
-    };
+    const obj = {}
+    obj[actionEntity] = entity
+    return Object.assign({}, state, obj);
   }
-  return { ...state }
+  return Object.assign({}, state);
 };
