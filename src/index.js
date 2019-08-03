@@ -1,4 +1,4 @@
-export const loading = (state = {}, action) => {
+export default (state = {}, action) => {
   const { type } = action;
 
   const matches = /[\w\/@\-\_]+(REQUEST|RECEIVE|ERROR)/gi.exec(type);
