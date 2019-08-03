@@ -7,7 +7,7 @@ module.exports = {
     path: __dirname + "/lib",
     filename: "main.js",
     library: 'loading',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
